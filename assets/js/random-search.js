@@ -16,8 +16,10 @@ function getData(type, cb) {
 function writeToDocument(type) {
     
     getData(type, function(data) {
-        console.dir(data);
-        document.getElementById("data").innerHTML = data.results;
+        //div with id=data printing this//
+        document.getElementById("data").innerHTML = data.meals["0"].strMeal;
     });
 }
 
+// meals[""0""].strMeal; //
+//property path for the random meal title but cant get working//
