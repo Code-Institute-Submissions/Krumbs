@@ -34,7 +34,11 @@ function writeToDocument(type) {
         // description of how to carry out the meal
         document.getElementById("recipe-instruction").innerHTML = data.meals["0"].strInstructions;        
         //youtube clip needs embeeded as video instead of website link/ broken link
-        document.getElementById("recipe-vid").innerHTML = '<iframe src="data.meals["0"].strYoutube">';
+        document.getElementById("recipe-vid").innerHTML = '<iframe src=`$strYoutube`>'
+
+
+        //'<iframe src="data.meals["0"].strYoutube">';
+        // document.getElementById("recipe-vid").innerHTML = '<iframe src="https://www.youtube.com/embed/${"data.meals["0"].strYoutube.slice(-11)}">';
     });
 }
 
