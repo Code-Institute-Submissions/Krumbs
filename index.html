@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="assets/js/search.js"></script>    
-    
-    
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="assets/js/search.js"></script>
+
+
+	<title>Document</title>
 </head>
+
 <body>
 
+	<div>
+		<button onclick="writeToDocument('')" class="button" id="get_recipie">Meal Idea</button>
+	</div>
+
+	<div id="recipe-title"></div>
+
+	<div id="recipe-category"></div>
+
+	<div id="recipe-image"></div>
+
+    <div id="recipe-ingred"></div>
+
+	<div id="recipe-instruction"></div>
+
+	<div id="recipe-vid"></div>
 
 
-    <input type="text" id="recipe-search" value="" oninput="fetchRecipeInformation()">
-    <div id="recipe-title"></div>
-    <div id="recipe-time"></div>
-    <div id="recipe-image"></div>
+	<footer>
+		<ul>
+			
+			<li><a href="index.html">Random Meal</a></li>            
+			<li><a href="notes.html">Notes</a></li>
+            <li><a href="map.html">Map</a></li>
 
-<footer>
-    <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="random.html">Random Meal</a></li>
-        <li><a href="notes.html">Notes & Find</a></li>        
-    </ul>
-</footer>
+		</ul>
+	</footer>
 
 </body>
+
 </html>
