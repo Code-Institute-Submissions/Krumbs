@@ -8,12 +8,12 @@ function getData(type, cb) {
             cb(JSON.parse(this.responseText));
         }
     };
-
+    
     xhr.open("GET", baseURL + type + "/");
     xhr.send();
 }
 
-    
+
 
 function writeToDocument(type) {
            
@@ -38,25 +38,34 @@ function writeToDocument(type) {
         // description of how to carry out the meal
         document.getElementById("recipe-instruction").innerHTML = data.meals["0"].strInstructions;
 
-        
+        let watchURL = data.meals["0"].strYoutube // console saing watchURL not defined at writeToDocument; at HTMLButtonElement.conclick
+        let newURL = watchURL.toString()  
 
+        //youtube clip needs embeeded as video instead of website link/ broken link / trying to use replace method
         
-
-        //youtube clip needs embeeded as video instead of website link/ broken link
         document.getElementById("recipe-vid").innerHTML = `<iframe src=${newURL}>`;
 
-            let watchURL = data.meals["0"].strYoutube
-            let newURL = watchUrl.toString()
-            function myFunction(){
+                      
+         function myFunction(){
             var str = document.getElementById("recipe-vid").innerHTML;
             var res = str.replace("watch", "embed");
             document.getElementById("recipe-vid").innerHTML = res;
         }
-        console.log(watchURL) 
+
+                
 
     });
+       
+         
 
+        console.log(watchURL)
 }
+
+
+
+
+
+        
 
 //  '<iframe src="data.meals["0"].strYoutube">'; 
 // document.getElementById("recipe-vid").innerHTML = '<iframe src="https://www.youtube.com/embed/${"data.meals["0"].strYoutube.slice(-11)}">';
