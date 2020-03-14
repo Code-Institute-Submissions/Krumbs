@@ -25,29 +25,34 @@ function writeToDocument(type) {
         //link needs converted to image instead of showing a website link/ or broken image
         document.getElementById("recipe-image").innerHTML = `<img src=${data.meals["0"].strMealThumb}>`;
 
-        //need list of ingredients an measures 1-20 on a for loop? Unpacking Our Data Onto The DOM lesson: 
-        //checks if the meal has that corresponding ingredient-measure pair. If it does, we're putting it into the ingredients array. 
-        //If there aren't any more ingredients we're stopping the for loop with a break condition. needs figured out next.
-
-    
-
-        // document.getElementById("recipe-ingred").innerHTML = data.meals["0"].strIngredient1; 
+        // document.getElementById("recipe-ingred").innerHTML = data.meals["0"].strIngredient1;
         //document.getElementById("recipe-meas").innerHTML = data.meals["0"].strMeasure1; 
+        // trying to use a loop to return ingredients and measures
 
+        // from stackoverflow: https://stackoverflow.com/a/58007798 (keep this for your README!)
+        document.getElementById("recipe-ingred").innerHTML = ""; // clear the list each time
+        let results = Object.keys(data.meals["0"])
+            .filter(value => /^strIngredient[1-20]?/i.test(value))
+            .map(e => data.meals["0"][e]);
+        results.forEach(ingredient => {
+            if (ingredient !== "") {
+                // console.log(ingredient)
+                newLI = document.createElement("li");
+                newLI.innerHTML = ingredient;
+                recipeUL = document.getElementById("recipe-ingred");
+                recipeUL.appendChild(newLI);
+            }
+        });
 
         // description of how to carry out the meal
         document.getElementById("recipe-instruction").innerHTML = data.meals["0"].strInstructions;
 
-
         //youtube clip embeded
-
-        let watchURL = `${data.meals["0"].strYoutube}`
-        let newURL = watchURL.toString()
-
-
-        var str = newURL;
-        var res = str.replace("watch?", "embed/");
+        let watchURL = `${data.meals["0"].strYoutube}`;
+        let newURL = watchURL.toString().replace("v=", "");
+        //var str = newURL;
+        var res = newURL.replace("watch?", "embed/"); //changed str to newURL cuts down on amount of code delete these comments later
         document.getElementById("recipe-vid").innerHTML = `<iframe src=${res}>`;
-       
+
     });
 }
