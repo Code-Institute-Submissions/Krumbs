@@ -3,18 +3,14 @@ const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
-
 //classes names
 const CHECK ="fa-check-circle";
 const UNCHECK ="fa-circle-thin";
 const LINE_THROUGH = "lineThrough";
-
 //variables
 let LIST, id;
-
 //get item from local storage
 let data = localStorage.getItem("TODO");
-
 //check if data is not empty
 if (data){
     LIST = JSON.parse.(data);
@@ -25,7 +21,6 @@ if (data){
     LIST = [];
     id = 0;
 }
-
 //load items to the users interface
 function loadList(array){
     array.forEach(function(item){
@@ -41,10 +36,8 @@ clear.addEventListener("click", function(){
 const options = {weekday : "long", month:"short", day:"numeric"};
 const today = new Date();
 dateElement.innerHTML = today.toLocaleDateString("en-US, options");
-
 //add a to-do // update toDo
 function addToDo(toDo, id, done, trash) {
-
     if (trash){
         return;
     }  
@@ -78,7 +71,6 @@ document.addEventListener("keyup",function(event){
         input.value="";
        }
 });
-
 // to-do complete
 function completeToDo(element){
     element.classList.toggle(CHECK);
@@ -86,20 +78,15 @@ function completeToDo(element){
     element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
-
 //remove to do
 function removeToDo(element){
     element.parentNode.parentNode.removeChild(element.parentNode);
-
     List[element.id].trash = true;
 }
-
 //target items created
-
 list.addEventListener("click", function(event){
     const element = event.target;
     const elementJob = element.attributes.job.value;
-
     if(elementJob == "complete"){
             completeToDo(element);
     }else if(elementJob == "delete"){
