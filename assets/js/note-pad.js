@@ -9,6 +9,8 @@ const listDisplayContainer = document.querySelector('[data-list-display-containe
 const listTitleElement = document.querySelector('[data-list-title]')
 const listCountElement = document.querySelector('[data-list-count]')
 const tasksContainer = document.querySelector('[data-tasks]')
+//pulling templaye from html to use in ingredients list
+const taskTemplate = document.getElementById('task-template')
 
 const LOCAL_STORAGE_LIST_KEY = 'task.lists'
 let lists = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || [] // get information from local store using key, then parse/ or give empty array
@@ -57,11 +59,9 @@ function save() {
 }
 
 
-
 function render() {
     clearElement(listsContainer)
     renderLists()
-
     const selectedList = lists.find(list => list.id === selectedListId)
     if (selectedListId == null) {
     listDisplayContainer.style.display = 'none' // removes recipie list if deleted and nothing on my list selected
@@ -74,11 +74,27 @@ function render() {
   }    
 
 }
+//
+function renderTasks(selectedList) {
+  selectedList.tasks.forEach(task => {
+    const taskElement = document.importNode(taskTemplate.content, true)//clone the task template from html
+    const checkbox = taskElement.querySelector('input')
+    checkbox.id = task.id
+    checkbox.checked = task.complete
+    const label = taskElement.querySelector('label')
+    label.htmlFor = task.id
+    label.append(task.name)
+    tasksContainer.appendChild(taskElement)
+  })
+}
+
+
+
 // shows number of recipies still to get
 function renderTaskCount(selectedList) {
-  const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
-  const taskString = incompleteTaskCount === 1 ? "task" : "tasks"
-  listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`
+    const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
+    const taskString = incompleteTaskCount === 1 ? "task" : "tasks"
+    listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`
 }
 
 

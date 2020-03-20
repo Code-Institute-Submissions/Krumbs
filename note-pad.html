@@ -32,24 +32,24 @@
 
         <div class="todo-body">
             <div class="tasks" data-tasks>
-                <div class="task">
-                <input type="checkbox" id="task-1"/>
-                <label for="task-1"><span class="custom-checkbox"></span> Chicken pieces</label>
-                </div>
-            </div>
 
-            <div class="tasks">
                 <div class="task">
-                <input type="checkbox" id="task-2"/>
-                <label for="task-2"><span class="custom-checkbox"></span> Pastry </label>
+                    <input type="checkbox" id="task-1"/>
+                    <label for="task-1"><span class="custom-checkbox"></span> Chicken pieces</label>
+                </div>            
+                
+                <div class="task">
+                    <input type="checkbox" id="task-2"/>
+                    <label for="task-2"><span class="custom-checkbox"></span> Pastry </label>
                 </div>
-            </div>
+               
 
-            <div class="tasks">
+                
                 <div class="task">
-                <input type="checkbox" id="task-3"/>
-                <label for="task-3"><span class="custom-checkbox"></span> Gravey </label>
+                    <input type="checkbox" id="task-3"/>
+                    <label for="task-3"><span class="custom-checkbox"></span> Gravey </label>
                 </div>
+                
             </div>
 
             <div class="new-task-creator">
@@ -66,6 +66,12 @@
         
         </div>
     </div>
+    <template id="task-template">
+            <div class="task">
+                <input type="checkbox"/>
+                <label><span class="custom-checkbox"></span></label>
+            </div>
+    </template>
     
 </body>
 </html>
