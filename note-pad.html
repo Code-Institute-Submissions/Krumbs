@@ -1,77 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script defer src="assets/js/note-pad.js"></script>
-    <title>Note Pad</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script defer src="assets/js/note-pad.js"></script>
+	<title>Note Pad</title>
 </head>
+
 <body>
-    <h1>Note Pad</h1>
-    <div class="all-tasks">
-        <h2 class="task-list-title">My Lists</h2>
-        <ul class="task-list " data-lists>
-        <!-- <li class="list-name active-list">Chicken Pie</li>
-        <li class="list-name">Pork stew</li>
-        <li class="list-name">Chicken noodle soup</li> -->
-        </ul>
-    </div>
+	<h1>Note Pad</h1>
+	<div class="all-tasks">
+		<h2 class="task-list-title">My Lists</h2>
+		<ul class="task-list " data-lists>
+		</ul>
+	</div>
 
-    <form action="" data-new-list-form>
-        <input type="text" class="new list" data-new-list-input placeholder="New Recipie" aria-label="new recipie name"/>
-        <button class="btn-list" aria-label="create new list">+</button>
-    </form>
+	<form action="" data-new-list-form>
+		<input type="text" class="new list" data-new-list-input placeholder="New Recipie" aria-label="new recipie name"/>
+		<button class="btn-list" aria-label="create new list">+</button>
+	</form>
 
 
-    <div class="todo-list" data-list-display-container>
-        <div class="todo-header">
-            <h2 class="list-title" data-list-title>Chicken Pie</h2>
-            <p class="task-count" data-list-count>3 tasks remaining</p>
-        </div>
+	<div class="todo-list" data-list-display-container>
+		<div class="todo-header">
+			<h2 class="list-title" data-list-title>Chicken Pie</h2>
+			<p class="task-count" data-list-count>3 tasks remaining</p>
+		</div>
 
-        <div class="todo-body">
-            <div class="tasks" data-tasks>
+		<div class="todo-body">
+			<div class="tasks" data-tasks></div>
 
-                <div class="task">
-                    <input type="checkbox" id="task-1"/>
-                    <label for="task-1"><span class="custom-checkbox"></span> Chicken pieces</label>
-                </div>            
-                
-                <div class="task">
-                    <input type="checkbox" id="task-2"/>
-                    <label for="task-2"><span class="custom-checkbox"></span> Pastry </label>
-                </div>
-               
+			<div class="new-task-creator">
+				<form action="" data-new-task-form>
+					<input type="text" data-new-task-input class="new list" placeholder="New Ingredient" aria-label="new Ingredient name"/>
+					<button class="btn-ingdt" aria-label="create new Ingredient">+</button>
+				</form>
+			</div>
 
-                
-                <div class="task">
-                    <input type="checkbox" id="task-3"/>
-                    <label for="task-3"><span class="custom-checkbox"></span> Gravey </label>
-                </div>
-                
-            </div>
+			<div class="delete-task">
+				<button class="btn-delete" data-clear-completed-tasks-button>Clear Completed Tasks</button>
+				<button class="btn-delete" data-delete-list-button >Delete List</button>
+			</div>
 
-            <div class="new-task-creator">
-                <form action="">
-                    <input type="text" class="new list" placeholder="New Ingredient" aria-label="new Ingredient name"/>
-                    <button class="btn-ingdt" aria-label="create new Ingredient">+</button>
-                </form>
-            </div>
+		</div>
+	</div>
+	<template id="task-template">
+		<div class="task">
+			<input type="checkbox"/>
+			<label><span class="custom-checkbox"></span></label>
+		</div>
+	</template>
 
-            <div class="delete-task">
-                <button class="btn-delete">Clear Compelted Tasks</button>
-                <button class="btn-delete" data-delete-list-button >Delete List</button>
-            </div>
-        
-        </div>
-    </div>
-    <template id="task-template">
-            <div class="task">
-                <input type="checkbox"/>
-                <label><span class="custom-checkbox"></span></label>
-            </div>
-    </template>
-    
 </body>
+
 </html>
