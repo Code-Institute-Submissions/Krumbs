@@ -1,7 +1,14 @@
+// my list const
 const listsContainer = document.querySelector('[data-lists]')
 const newListForm = document.querySelector('[data-new-list-form]')
 const newListInput = document.querySelector('[data-new-list-input]')
 const dataDeleteListButton = document.querySelector('[data-delete-list-button]')
+
+// recipie ingredients list const
+const listDisplayContainer = document.querySelector('[data-list-display-container]')
+const listTitleElement = document.querySelector('[data-list-title]')
+const listCountElement = document.querySelector('[data-list-count]')
+const tasksContainer = document.querySelector('[data-tasks]')
 
 const LOCAL_STORAGE_LIST_KEY = 'task.lists'
 let lists = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || [] // get information from local store using key, then parse/ or give empty array
@@ -50,9 +57,33 @@ function save() {
 }
 
 
-// set up my list so new item can be added on to end
+
 function render() {
     clearElement(listsContainer)
+    renderLists()
+
+    const selectedList = lists.find(list => list.id === selectedListId)
+    if (selectedListId == null) {
+    listDisplayContainer.style.display = 'none' // removes recipie list if deleted and nothing on my list selected
+    } else {
+    listDisplayContainer.style.display = ''
+    listTitleElement.innerText = selectedList.name // changes title of recipie to selected name on my list
+    renderTaskCount(selectedList)
+    clearElement(tasksContainer)
+    renderTasks(selectedList)
+  }    
+
+}
+// shows number of recipies still to get
+function renderTaskCount(selectedList) {
+  const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
+  const taskString = incompleteTaskCount === 1 ? "task" : "tasks"
+  listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`
+}
+
+
+// set up my list so new item can be added on to end
+function renderLists() {
     lists.forEach(list => {
         const listElement = document.createElement('li')
         listElement.dataset.listId = list.id
@@ -64,6 +95,8 @@ function render() {
         listsContainer.appendChild(listElement)
   })
 }
+
+
 
 function clearElement(element) {
     while (element.firstChild) {
