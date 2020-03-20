@@ -13,7 +13,7 @@ function render() {
     lists.forEach(list => {
         const listElement = document.createElement('li')
         listElement.classList.add(list-name)
-        listElement.innerHTML = list
+        listElement.innerHTML = list.name
         listsContainer.appendChild(listElement)
     })
 }
