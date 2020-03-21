@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">    
 	<title>Document</title>
 </head>
 
@@ -12,7 +12,9 @@
 	<header>
 
 	</header>
-	<div class="map-box"></div>
+	<div class="map-box">
+        <div id="map"></div>
+    </div>
 	<footer>
 		<ul>
 
@@ -22,6 +24,8 @@
 
 		</ul>
 	</footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" type="text/javascript"></script>
+    <script src="assets/js/maps.js"></script>
 </body>
 
 </html>
