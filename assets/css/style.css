@@ -5,14 +5,21 @@
     }
 
 html, body {
-    height: 100%;    
-           
+    height: 100%;   
     }
 
 body{
     font-family: 'Roboto', sans-serif; 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;       
+}
+
+.bkgrd1 {
+    background: url(../img/singleflower.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .content {
@@ -59,6 +66,18 @@ header, h1 {
 
 .btn-meal{
     /*button to be styled on color scheme*/
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgb(229, 137, 210, 0.4);
+    color: grey;
+    font-weight: 700;
+    border: 1px grey solid;    
+}
+
+.btn-meal:hover {
+  background-color: rgb(229, 137, 210, 0.8);
+  color: white;
+  cursor: pointer;
 }
 
 .sub-header {
@@ -76,6 +95,7 @@ header, h1 {
     grid-template-columns: 1fr; /* adding another 1fr for media queries */
     grid-gap: 10px;
     font-family: 'Nanum Pen Script', cursive; 
+    color:rgba(0, 0, 0, 0.7)
 }
 
 .grid .item {
@@ -89,6 +109,19 @@ header, h1 {
 .grid .item img{
     width: 100%;
 }
+
+.grid ul li{   
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;      
+    /*align-items: center;*/
+    /*list-style: none; */
+}
+
+.grid ul:first-child {
+    padding-top: 15px;
+}
+
      
 #description {
     font-family: Roboto;
@@ -181,6 +214,10 @@ header, h1 {
     list-style: none;
 }
 
+.app-footer:hover {  
+  cursor: pointer;
+}
+
 .app-footer ul li{
     display: flex;
     flex-direction: column;
@@ -190,4 +227,8 @@ header, h1 {
 .app-footer ul li i {
     font-size: 130%;
     color: rgb(253, 246, 232); ;
+}
+
+@media(min-width: 768px){
+    /*change grids in here for larger screens later*/
 }
