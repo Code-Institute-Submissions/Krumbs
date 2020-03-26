@@ -1,32 +1,91 @@
-        
-
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-
-      }
-       #map {
-        height: 100%;
-      }
-        header, h1 {
-          font-family: 'Nanum Pen Script', cursive;
-          text-align: center;
-          color: ;          
-          
-      }  
-    .app-header {
-        background-image: url('');        
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;        
     }
 
+html, body {
+    height: 100%;
+    /*margin: 0;
+    padding: 0;
+    text-align: center;*/
+    font-family: 'Roboto', sans-serif;        
+    }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: none;        
+}
+#map {
+        height: 100%;
+    }
+header, h1 {
+        font-family: 'Nanum Pen Script', cursive;    
+    }  
+
+.app-header {
+        background-image: url("../assets/img/");  /* picutre not loading */
+        box-shadow: 3px 3px 10px #888;
+        text-align: center;
+        justify-content: center;
+        padding: 15px 10px;
+    }
+.btn-box {
+    justify-content: center;
+    text-align: center;
+    padding-top: 35px;
+    box-shadow: 3px 3px 10px #888;
+    
+}
+
+.btn-box, h3{
+    justify-content: center;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    font-family: 'Nanum Pen Script', cursive;    
+}
+
+.btn-meal{
+    /*button to be styled on color scheme*/
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 10px;
+    font-size: 140%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* adding another 1fr for media queries */
+    grid-gap: 10px;
+    font-family: 'Nanum Pen Script', cursive; 
+}
+
+.grid .item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 2px 2px 4px #888;    
+}
+
+.grid .item img{
+    width: 100%;
+}
      
-      #description {
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-      }
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    }
 
       #infowindow-content .title {
         font-weight: bold;
