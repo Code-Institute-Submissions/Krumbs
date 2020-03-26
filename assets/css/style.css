@@ -1,14 +1,13 @@
 
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
       #map {
         height: 100%;
       }
-      /* Optional: Makes the sample page fill the window. */
+      
       html, body {
         height: 100%;
         margin: 0;
         padding: 0;
+        text-align: center;
       }
       #description {
         font-family: Roboto;
@@ -60,10 +59,14 @@
         font-family: Roboto;
         font-size: 15px;
         font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
+        margin: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-left: 5px;  
         text-overflow: ellipsis;
-        width: 400px;
+        width: 50%;
+        text-align: center;
+        justify-content: center;
       }
 
       #pac-input:focus {
