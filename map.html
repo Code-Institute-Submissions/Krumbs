@@ -10,30 +10,39 @@
     <script src="assets/js/map.js"></script>
 
 
-    <title>Places Search Box</title>
+    <title>Find Nearest Shop</title>
 </head>
 
     
   </head>
-  <body>
-    
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    
-    <div id="map"></div>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&libraries=places&callback=initAutocomplete"
-         async defer></script>
+  <body class="bkgrd1">
+        <div class="content">
+                <header class="app-header-map">
+                    <div class="container">
+                        <h1>Krumbs</h1>
+                    </div>
+                </header>
 
+                    
+                    <input id="pac-input" class="controls" type="text" placeholder="Search for Groceries">
+                    
+                    <div id="map"></div>
+               
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&libraries=places&callback=initAutocomplete"
+                async defer></script>
 
-    	<footer>
-		<ul>
-			
-			<li><a href="index.html">Random Meal</a></li>            
-			<li><a href="note-pad.html">Note Pad</a></li>
-            <li><a href="map.html">Map</a></li>
+        </div>
 
+        <footer class="app-footer footer-map">
+		<ul>			
+			<li><a href="index.html"><i class="fa fa-home"></i></a>Home</li>            
+			<li><a href="note-pad.html"><i class="fa fa-sticky-note"></i></a>Notes</li>
+            <li><a href="map.html"><i class="fa fa-map-marker"></i></a>Map</li>
 		</ul>
 	</footer>
+
+    	
     
   </body>
+  
 </html>

@@ -48,13 +48,20 @@ header, h1 {
         color: rgb(253, 246, 232);  
     }  
 
-.app-header {
-        background-image: url("../assets/img/");  /* picutre not loading */
+.app-header {        
         background-color: rgb(169, 236, 169);
         box-shadow: 3px 3px 10px #888;
         text-align: center;
         justify-content: center;
         padding: 15px 10px;
+    }
+
+.app-header-map {        
+        background-color: rgb(169, 236, 169);
+        box-shadow: 3px 3px 10px #888;
+        text-align: center;
+        justify-content: center;
+        padding: ;
     }
 .btn-box {
     justify-content: center;
@@ -132,26 +139,29 @@ header, h1 {
     padding-top: 15px;
 }
 
-     
+/*------MAP----------*/     
 #description {
     font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
     }
 
-      #infowindow-content .title {
+#infowindow-content .title {
         font-weight: bold;
       }
 
-      #infowindow-content {
+#infowindow-content {
         display: none;
       }
 
-      #map #infowindow-content {
+#map #infowindow-content {
         display: inline;
       }
+#map {
+    height: 85%;
+}
 
-      .pac-card {
+.pac-card {
         margin: 10px 10px 0 0;
         border-radius: 2px 0 0 2px;
         box-sizing: border-box;
@@ -162,27 +172,30 @@ header, h1 {
         font-family: Roboto;
       }
 
-      #pac-container {
+#pac-container {
         padding-bottom: 12px;
         margin-right: 12px;
+        
       }
 
-      .pac-controls {
+.pac-controls {
         display: inline-block;
         padding: 5px 11px;
+
       }
 
-      .pac-controls label {
+.pac-controls label {
         font-family: Roboto;
         font-size: 13px;
         font-weight: 300;
       }
 
-      #pac-input {
-        background-color: #fff;
+#pac-input {
+        /*--search--*/
+        background-color: rgb(191, 248, 174);
         font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
+        font-size: 15px;        
+        font-weight: bold;
         margin: 5px;
         padding-top: 5px;
         padding-right: 5px;
@@ -193,19 +206,20 @@ header, h1 {
         justify-content: center;
       }
 
-      #pac-input:focus {
+#pac-input:focus {
         border-color: #4d90fe;
       }
 
-      #title {
+#title {
         color: #fff;
         background-color: #4d90fe;
         font-size: 25px;
         font-weight: 500;
         padding: 6px 12px;
       }
-      #target {
-        width: 345px;
+#target {
+        width: 345px; /*--search bar--*/
+        
       }
 
 /*--------------------*/
@@ -230,6 +244,10 @@ header, h1 {
     padding-bottom: 35px;
 }
 
+/*-----------------------*/
+
+
+/*----------------------*/
 .app-footer {
     background-color: rgb(130, 255, 130);    
     color: rgb(253, 246, 232); ;
@@ -258,6 +276,10 @@ header, h1 {
 .app-footer ul li i {
     font-size: 130%;
     color: rgb(253, 246, 232); ;
+}
+
+.footer-map {
+    z-index: ;    
 }
 
 @media(min-width: 768px){
