@@ -5,8 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+    
     <script src="assets/js/map.js"></script>
 
 
@@ -17,16 +25,18 @@
   </head>
   <body class="bkgrd1">
         <div class="content">
-                <header class="app-header-map">
+                <header class="app-header">
                     <div class="container">
                         <h1>Krumbs</h1>
                     </div>
                 </header>
 
-                    
+                <div class="sub-header">    
                     <input id="pac-input" class="controls" type="text" placeholder="Search for Groceries">
-                    
+                </div>    
+                
                     <div id="map"></div>
+                  
                
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&libraries=places&callback=initAutocomplete"
                 async defer></script>
