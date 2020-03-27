@@ -22,6 +22,14 @@ body{
     background-position: center;
 }
 
+.bkgrd2 {
+    background: url(../img/notepad.png);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-position: center top;
+}
+
 .content {
     flex: 1 0 auto;
 }
@@ -200,6 +208,27 @@ header, h1 {
         width: 345px;
       }
 
+/*--------------------*/
+
+.np-marker {
+    font-family: 'Permanent Marker', cursive;
+    color: blue;   
+}
+
+.all-tasks, .todo-list, form{
+    align-content: center;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: blue;
+}
+
+.all-tasks h2 {
+    padding-top: 25px;
+}
+
+.todo-body {
+    padding-bottom: 35px;
+}
 
 .app-footer {
     background-color: rgb(130, 255, 130);    
