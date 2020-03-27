@@ -134,7 +134,7 @@ function renderTasks(selectedList) {
 // shows number of recipies still to get
 function renderTaskCount(selectedList) {
     const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
-    const taskString = incompleteTaskCount === 1 ? "task" : "tasks"
+    const taskString = incompleteTaskCount === 1 ? "ingredient" : "ingredients"
     listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`
 }
 
