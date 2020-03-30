@@ -51,12 +51,13 @@ body{
     }
 header, h1 {
         font-family: 'Nanum Pen Script', cursive;  
-        color: rgb(253, 246, 232);          
+        color: rgb(253, 246, 232);    
+        font-size: 180%;      
     }  
 
 header, h1, a{
     text-decoration: none;
-    color: rgb(253, 246, 232); 
+    color: rgb(128, 128, 128);  
 }
 .app-header {        
         background-color: rgb(169, 236, 169);
@@ -86,17 +87,19 @@ header, h1, a{
     text-align: center;
     padding-top: 35px;
     padding-bottom: 25px;
-    font-family: 'Nanum Pen Script', cursive;    
+    font-family: 'Nanum Pen Script', cursive;  
+    font-size: 140%;
+    color: rgb(128, 128, 128);  
 }
 
 .btn-meal{
     /*button to be styled on color scheme*/
     padding: 20px;
     border-radius: 30px;
-    background-color: rgb(229, 137, 210, 0.4);
-    color: grey;
+    background-color: rgba(8, 8, 8, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 700;
-    border: 1px grey solid;    
+    border: none;    
 }
 
 .btn-meal:hover {
@@ -399,7 +402,7 @@ header, h1, a{
 /*----------------------*/
 .app-footer {
     background-color: rgb(130, 255, 130);    
-    color: rgb(253, 246, 232); ;
+    color: rgb(128, 128, 128);  
     padding: 10px;    
     margin-top: 10px;
     flex-shrink: 0;
@@ -410,6 +413,7 @@ header, h1, a{
     align-items: center;
     justify-content: space-around;
     list-style: none;
+    
 }
 
 .app-footer:hover {  
@@ -424,7 +428,7 @@ header, h1, a{
 
 .app-footer ul li i {
     font-size: 130%;
-    color: rgb(253, 246, 232); ;
+    color: rgb(128, 128, 128); 
 }
 
 .footer-map {
