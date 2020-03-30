@@ -3,17 +3,14 @@
     margin: 0;
     padding: 0;        
     }
-
 html, body {
     height: 100%;   
     }
-
 body{
     font-family: 'Roboto', sans-serif; 
     display: flex;
     flex-direction: column;       
 }
-
 .bkgrd1 {
     background: url(../img/lemonlove.png);
     background-repeat:no-repeat;
@@ -21,7 +18,6 @@ body{
     background-attachment: fixed;
     background-position: center;
 }
-
 .bkgrd3 {
     background: url(../img/lemonlove2.jpg);
     background-repeat:no-repeat;
@@ -29,17 +25,14 @@ body{
     background-attachment: scroll;
     background-position: center;
 }
-
 .bkgrd2 { 
     background-color: rgba(156, 240, 139, 0.6);
     max-width: 600px;
     border-radius: 20px;       
 }
-
 .content {
     flex: 1 0 auto;
 }
-
 .container {
     width: 90%;
     margin: 0 auto;
@@ -54,7 +47,6 @@ header, h1 {
         color: rgb(253, 246, 232);    
         font-size: 180%;      
     }  
-
 header, h1, a{
     text-decoration: none;
     color: rgb(128, 128, 128);  
@@ -66,7 +58,6 @@ header, h1, a{
         justify-content: center;
         padding: 15px 10px;
     }
-
 .app-header-map {        
         background-color: rgb(169, 236, 169);
         box-shadow: 3px 3px 10px #888;
@@ -78,10 +69,8 @@ header, h1, a{
     justify-content: center;
     text-align: center;
     padding-top: 35px;
-    box-shadow: 3px 3px 10px #888;
-    
+    box-shadow: 3px 3px 10px #888;    
 }
-
 .btn-box, h3{
     justify-content: center;
     text-align: center;
@@ -91,23 +80,18 @@ header, h1, a{
     font-size: 140%;
     color: rgb(128, 128, 128);  
 }
-
-.btn-meal{
-    /*button to be styled on color scheme*/
-    padding: 20px;
-    border-radius: 30px;
-    background-color: rgba(8, 8, 8, 0.6);
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 700;
-    border: none;    
+.btn-meal i {
+    font-size: 600%;
+    color: rgb(90, 92, 100);    
+    background-color: rgb(0, 0, 0, 0);    
 }
-
-.btn-meal:hover {
-  background-color: rgb(229, 137, 210, 0.8);
-  color: white;
+.btn-meal {
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+}
+.btn-meal:hover {  
   cursor: pointer;
 }
-
 .sub-header {
     display: flex;
     flex-direction: column;
@@ -117,7 +101,6 @@ header, h1, a{
     padding: 15px 10px;
     font-size: 140%;
 }
-
 .grid, .grid2 {
     display: grid;
     grid-template-columns: 1fr; /* adding another 1fr for media queries */
@@ -126,11 +109,18 @@ header, h1, a{
     font-weight: bold;
     font-size: 120%;    
 }
-
 #recipe-instruction{
     background-color: rgba(0, 0, 0, 0.1);
     font-size: 110%;
     line-height: 1.4;
+}
+
+#recipe-vid iframe{
+    min-height: 400px;
+}
+
+#recipe-image img {
+    max-height: 500px;
 }
 
 
@@ -138,14 +128,12 @@ header, h1, a{
 @media(min-width: 1200px) {
     .grid {    
     grid-template-columns: 1fr 1fr; 
-    }
-    
+    }    
     .btn-box, .sub-header,
     .grid {
     width: 65%;   
     margin-left: 15%;
     }
-
     #recipe-image{
         max-width: 1000px;  
         justify-content: center;      
@@ -153,14 +141,10 @@ header, h1, a{
     #recipe-ingred{
         text-align: center;     
     }
-
     #recipe-ingred{
         min-height: auto; 
-    }
-
-    
+    }    
 }
-
 .grid .item {
     display: flex;
     flex-direction: column;
@@ -168,12 +152,17 @@ header, h1, a{
     padding-right: 5px;
     box-shadow: 2px 2px 4px #888;    
 }
-
 .grid .item img{
     width: 100%;
 }
-
 .grid ul li{   
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;      
+    /*align-items: center;*/
+    list-style: none;
+}
+.grid2 ul li{   
     padding-left: 30px;
     padding-top: 5px;
     padding-bottom: 5px;      
@@ -181,9 +170,7 @@ header, h1, a{
     list-style: none;
 }
 
-.grid ul:first-child {
-    padding-top: 15px;
-}
+
 
 /*------MAP----------*/     
 #description {
@@ -191,15 +178,12 @@ header, h1, a{
     font-size: 15px;
     font-weight: 300;
     }
-
 #infowindow-content .title {
         font-weight: bold;
       }
-
 #infowindow-content {
         display: none;
       }
-
 #map #infowindow-content {
         display: inline;
       }
@@ -214,7 +198,6 @@ header, h1, a{
     left: 15%;
 }
 }
-
 .pac-card {
         margin: 10px 10px 0 0;
         border-radius: 2px 0 0 2px;
@@ -225,25 +208,19 @@ header, h1, a{
         background-color: #fff;
         font-family: Roboto;
       }
-
 #pac-container {
         padding-bottom: 12px;
-        margin-right: 12px;
-        
+        margin-right: 12px;        
       }
-
 .pac-controls {
         display: inline-block;
         padding: 5px 11px;
-
       }
-
 .pac-controls label {
         font-family: Roboto;
         font-size: 13px;
         font-weight: 300;
       }
-
 #pac-input {
         /*--search--*/
         background-color: rgb(228, 248, 174);
@@ -260,11 +237,9 @@ header, h1, a{
         text-align: center;
         justify-content: center;        
       }
-
 #pac-input:focus {
         border-color: #4d90fe;
       }
-
 #title {
         color: #fff;
         background-color: #4d90fe;
@@ -273,37 +248,28 @@ header, h1, a{
         padding: 6px 12px;
       }
 #target {
-        width: 345px; /*--search bar--*/
-        
+        width: 345px; /*--search bar--*/        
       }
-
-/*--------------------*/
-
+/*---------notepad-----------*/
 .np-marker {
     font-family: 'Permanent Marker', cursive;
     color: blue;   
 }
-
 .all-tasks, .todo-list, form{
     align-content: center;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    color: blue;
+    color: blue; 
 }
-
 .all-tasks h2 {
     padding-top: 25px;
 }
-
 .todo-body {
     padding-bottom: 35px;
 }
-
 .all-tasks {    
-    padding-top: 15px;
+    padding-top: 15px;    
     }
-
-
 .new-list {
     background-color: rgb(222, 248, 174);
         font-family: 'Permanent Marker', cursive;
@@ -320,7 +286,6 @@ header, h1, a{
         text-align: center;
         justify-content: center;
 }
-
 .btn-list, .btn-ingdt {
     font-size: 130%;
     color: blue;
@@ -328,27 +293,23 @@ header, h1, a{
     border: none;    
     font-weight: bolder;    
 }
-
 .btn-list:hover, .btn-ingdt:hover,
 .btn-delete:hover{
     cursor: pointer;
 }
-
 .btn-delete {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    background-color: rgba(228, 155, 213, 0.4);
-    color: grey;
+    background-color: rgba(8, 8, 8, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
     border: none;  
 }
-
 [type="checkbox"]{
     opacity: 0;
     position: absolute;
 }
-
 .custom-checkbox {
     display: inline-block;
     height: 0.75em;
@@ -360,14 +321,11 @@ header, h1, a{
     transform: scale(1);
     transition: transform 300ms ease-in-out;
 }
-
 .task:hover .custom-checkbox,
 [type="checkbox"]:focus + label .custom-checkbox {
     transform: scale(1.2);
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
-
 [type="checkbox"]:checked + label .custom-checkbox{
     background: blue;
 }
@@ -379,11 +337,9 @@ header, h1, a{
     .all-tasks {    
     padding-top: 15px;
     }
-
     .todo-list {    
     padding-top: 25px;
-    }    
-    
+    }        
     #recipe-image{
         max-width: 1000px;  
         justify-content: center;      
@@ -394,11 +350,8 @@ header, h1, a{
 
     #recipe-ingred{
         min-height: auto; 
-    }
-
-    
+    }    
 }
-
 /*----------------------*/
 .app-footer {
     background-color: rgb(130, 255, 130);    
@@ -407,30 +360,24 @@ header, h1, a{
     margin-top: 10px;
     flex-shrink: 0;
 }
-
 .app-footer ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    
 }
-
 .app-footer:hover {  
   cursor: pointer;
 }
-
 .app-footer ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .app-footer ul li i {
     font-size: 130%;
     color: rgb(128, 128, 128); 
 }
-
 .footer-map {
     z-index: ;    
 }
