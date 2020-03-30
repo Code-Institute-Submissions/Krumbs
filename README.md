@@ -1,17 +1,19 @@
 # Krumbs
 
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+This is my food for thought website created to display my use of HTML, CSS, JS & API's to potential employers and clients. It is created with the idea of producing a viable product for users to find an attractive meal for there next breakfast/lunch/diner. It will pull a random meal idea from an API and present it to the user. If the user likes what they see they have the ability to record need items in the notes page and find the nearest grocery store to their location in the maps section. All done in a responsive format.
  
 ## UX
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+My Objective in this design was to create a simple usable website first. Make it easy for potential users to remain enganged and find use of the app interesting. It is geared to people interested in food and/or cooking, and whating to try something new. With this in mind the idea was to continue to make the website as convenient and adding futher help by being able to recording outstanding ingredients for the different meals that are still needed and to find the nearest grocery store to them if they are away from home at the time.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+###  User Stories
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+- Owner
+ bla bla bla
+- User
+ bla bla bla
+ 
+## Wireframes
 
 ## Features
 
