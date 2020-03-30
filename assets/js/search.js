@@ -36,7 +36,7 @@ function writeToDocument(type) {
             }
         });
         // description of how to carry out the meal
-        document.getElementById("recipe-instruction").innerHTML = data.meals["0"].strInstructions;
+        document.getElementById("recipe-instruction").innerHTML = data.meals["0"].strInstructions.replace(/\n/g,"<br/>");
         //youtube clip embeded of how to make meal
         let watchURL = `${data.meals["0"].strYoutube}`;
         let newURL = watchURL.toString().replace("v=", "");

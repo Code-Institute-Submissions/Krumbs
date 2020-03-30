@@ -22,12 +22,18 @@ body{
     background-position: center;
 }
 
-.bkgrd2 {
-    background: url(../img/notepad.png);
+.bkgrd3 {
+    background: url(../img/lemonlove2.jpg);
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: scroll;
-    background-position: center top;
+    background-position: center;
+}
+
+.bkgrd2 { 
+    background-color: rgba(156, 240, 139, 0.6);
+    max-width: 600px;
+    border-radius: 20px;       
 }
 
 .content {
@@ -109,15 +115,22 @@ header, h1, a{
     font-size: 140%;
 }
 
-.grid {
+.grid, .grid2 {
     display: grid;
     grid-template-columns: 1fr; /* adding another 1fr for media queries */
     grid-gap: 10px;
     font-family: 'Nanum Pen Script', cursive; 
     font-weight: bold;
-    font-size: 120%;
-    color:rgba(0, 0, 0, 0.7)
+    font-size: 120%;    
 }
+
+#recipe-instruction{
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 110%;
+    line-height: 1.4;
+}
+
+
 /*-----------------------------------------media for all grids----------------*/
 @media(min-width: 1200px) {
     .grid {    
@@ -230,7 +243,7 @@ header, h1, a{
 
 #pac-input {
         /*--search--*/
-        background-color: rgb(191, 248, 174);
+        background-color: rgb(228, 248, 174);
         font-family: Roboto;
         font-size: 15px;        
         font-weight: bold;
@@ -289,7 +302,7 @@ header, h1, a{
 
 
 .new-list {
-    background-color: rgb(248, 241, 174);
+    background-color: rgb(222, 248, 174);
         font-family: 'Permanent Marker', cursive;
         color: blue;
         font-size: 15px;        
