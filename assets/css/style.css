@@ -35,9 +35,6 @@ body{
     flex: 1 0 auto;
 }
 /*----- for map----*/
-.content1 {
-    min-height: 100%
-}
 
 .container {
     width: 90%;
@@ -192,9 +189,9 @@ header, h1, a{
         display: inline;
       }
 #map {
-    height: 65%;
-    flex: flex: 1 0 auto;    
+    height: 65%;    
 }
+
 
 /*-------------------------------map media-----------------*/
 /*@media(min-width: 680px) {
