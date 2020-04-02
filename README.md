@@ -108,4 +108,4 @@ To run locally, you can clone this repository directly into the editor of your c
 - Backgroungd images used in this site were obtained from [Pexels](https://www.pexels.com/) and [Goggle Images](https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl)
 ### Acknowledgements
 
-- I received inspiration for this project my wifes healthy living nad a big thanks goes to code institute tutors for their patience and my mentor victor for input on tidying up my ui.
+- I received inspiration for this project from my wifes healthy living and a big thanks goes to code institute tutors for their patience and my mentor victor for input on tidying up my ui.
