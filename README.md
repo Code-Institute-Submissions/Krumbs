@@ -24,11 +24,17 @@ I wanted to create a fun and engaging food website that would keep users curious
 -[wireframes](https://github.com/Wonka86/Krumbs/tree/master/assets/wireframes)
 
 Landing
-<img src="assets/wireframes/krumbs1.jpg" width="500"> 
+
+<img src="assets/wireframes/Krumbs1.jpg" width="500"> 
+
 Notes
-<img src="assets/wireframes/krumbs2.jpg" width="500"> 
+
+<img src="assets/wireframes/Krumbs2.jpg" width="500"> 
+
 Map
-<img src="assets/wireframes/krumbs3.jpg" width="500"> 
+
+<img src="assets/wireframes/Krumbs3.jpg" width="500"> 
+
 
 ## Features
 
