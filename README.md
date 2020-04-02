@@ -9,75 +9,89 @@ My Objective in this design was to create a simple usable website first. Make it
 ###  User Stories
 
 - Owner
- bla bla bla
+I wanted to create a fun and engaging food website that would keep users curious and thirsting for new culinary experiences. To do this i wanted an instant gratification without effort to be achieved with a find me a random meal button that will give the user an instant answer with each click with a variety of options poping up. When the user finds something interesting they are to be given the ability to write the ingredients they still need and nearest location to find needed ingredients.
+
 - User
- bla bla bla
+-I dont what to over think hence the reason i am using a website/application which will give me an idea of what type of breakfast/lunch/ and/or diner i would like to eat. 
+-I would like to be able to store ingredients in a list that is handy eg on my phone if i am coming back from work and cant get to a pen or paper. 
+-Additionally if i am out of my own town holidays or business i would like to find nearest grocery shop with out having to open up another website or applicaiton todo so.
  
 ## Wireframes
 
+- I created mock ups for my website before commencement of coding the project and are attached.
+-[wireframes](https://github.com/Wonka86)
+
+
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+The following section outlines implemented features and future features to be implemented
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- Fully Responsive website achieving the ability for users to get the information the require from mobile, touch pad ot computer.
+- One click random button function which fetches information on a random meal to be supplied to a user. Giving informaiton on Type of meal, ingredients needed, instructions on cooking , picutre of meal and video instructions on how to make meal. Using TheMealDB api.
+- Note pad page allowing for the user to save a meal and a secondary list for each meal with the ingredients needed. This note pad has the ability to retain information when exited and can be retrieved by returning to the website if exited
+- Maps page that allows user to specifically search for nearest grocery stores to a certain location and puts markers up - using google maps api.
 
 ### Features Left to Implement
-- Another feature idea
+- Comments page for user feed back on meals they have come across they gave particular enjoyment or meals they would recommend not trying.
+- specific search page if user has a favourite meal they would like to revisit again.
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+In this section i introduce the technologies i have used to build the Gym website.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) - markup language for the structure and presentation of World Wide Web contents.
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - used to format the layout of Web pages.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - used to fetch the information from api.
+- [Font Awesome](https://fontawesome.com/) - Toolkit used to style website with icons.
+- [Google Fonts](https://fonts.google.com/) - a font and icon toolkit.
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+For this project I checked to ensure the website would work with 3 popular web browsers Chrome, Firefox and Edge (although this will be deprecated) To check the website is responsive and sizes correctly deepening on the size of the browser window.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+- Website navigation and functionality
+ 1. Try to click on each button in the navigation menu and that each button links to the relevant section (Home/ Notes/ Map).
+ 2. Clicked on the Utenciles random meal button make sure getting a random meal each time.
+ 3. Tried repated meals and secondary ingredients lists by adding new meals and ingredients to each removing them individually and clearing them from the web page. By exiting the webpage and returning to notes pad to make sure they where still there when added and making sure they where deleted when returning after deletion.
+ 4. Visiting the maps page and searching for grocery stores in the search bar. Google markers popped up in the location with grocerys stores in the area.
+ 
+ - Interesting bugs or problems you discovered during your testing.
+  - Sometimes the TheMealDB api returns no video instruction for the meal.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+During the testing of the website i also used the following Tools:
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+- [Chrome dev Tools](https://developers.google.com/web/tools/chrome-devtools)
+- [css validation](https://jigsaw.w3.org/css-validator/)
+- [JS validation](https://codebeautify.org/jsvalidate)
+- [HTML validation](https://validator.w3.org/)
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
-
+### GitHub Pages
+This project was deployed to a hosting platform via GitHub Pages from the master branch.
+To achieve this the following steps were taken:
+Go to the repository on GitHub: 
+Go to Settings.
+GitHub Pages.
+Select the master branch.
+The website being deployed and can be found at:https://wonka86.github.io/Krumbs/
+### Local
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone 'https://github.com/Wonka86/Krumbs' into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- All text in this project is written by myself
+- Information for the meals comes from [TheMealDB.com](https://www.themealdb.com/api.php) api
+- Map information comes from the google maps api and libraries
 
 ### Media
-- The photos used in this site were obtained from ...
-
+- Backgroungd images used in this site were obtained from [Pexels](https://www.pexels.com/) and [Goggle Images](https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl)
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project my wifes healthy living nad a big thanks goes to code institute tutors for their patience and my mentor victor for input on tidying up my ui.
