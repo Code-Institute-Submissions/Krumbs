@@ -1,7 +1,9 @@
 # Krumbs
 
 This is my food for thought website created to display my use of HTML, CSS, JS & API's to potential employers and clients. It is created with the idea of producing a viable product for users to find an attractive meal for there next breakfast/lunch/diner. It will pull a random meal idea from an API and present it to the user. If the user likes what they see they have the ability to record need items in the notes page and find the nearest grocery store to their location in the maps section. All done in a responsive format.
- 
+
+<img src="assets/wireframes/krumbs_website.png" width="500"> 
+
 ## UX
  
 My Objective in this design was to create a simple usable website first. Make it easy for potential users to remain enganged and find use of the app interesting. It is geared to people interested in food and/or cooking, and whating to try something new. With this in mind the idea was to continue to make the website as convenient and adding futher help by being able to recording outstanding ingredients for the different meals that are still needed and to find the nearest grocery store to them if they are away from home at the time.
