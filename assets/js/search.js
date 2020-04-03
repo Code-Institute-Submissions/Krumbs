@@ -18,10 +18,8 @@ function writeToDocument(type) {
         document.getElementById("recipe-category").innerHTML = data.meals["0"].strCategory;
         //Running image of random Meal
         document.getElementById("recipe-image").innerHTML = `<img src=${data.meals["0"].strMealThumb}>`;
-        // document.getElementById("recipe-ingred").innerHTML = data.meals["0"].strIngredient1;
-        //document.getElementById("recipe-meas").innerHTML = data.meals["0"].strMeasure1; 
-        //use a loop to return ingredients and measures
-        // from stackoverflow: https://stackoverflow.com/a/58007798 (keep this for your README!)
+        
+        // from stackoverflow: 
         document.getElementById("recipe-ingred").innerHTML = ""; // clear the list each time
         let results = Object.keys(data.meals["0"])
             .filter(value => /^strIngredient[1-20]?/i.test(value))

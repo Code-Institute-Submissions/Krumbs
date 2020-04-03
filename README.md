@@ -103,6 +103,7 @@ To run locally, you can clone this repository directly into the editor of your c
 - All text in this project is written by myself
 - Information for the meals comes from [TheMealDB.com](https://www.themealdb.com/api.php) api
 - Map information comes from the google maps api and libraries
+- [stackoverflow](https://stackoverflow.com/a/58007798) helped with fixing code for the meal page
 
 ### Media
 - Backgroungd images used in this site were obtained from [Pexels](https://www.pexels.com/) and [Goggle Images](https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl)
