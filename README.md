@@ -1,6 +1,6 @@
 # Krumbs
 
-This is my food for thought website created to display my use of HTML, CSS, JS & API's to potential employers and clients. It is created with the idea of producing a viable product for users to find an attractive meal for there next breakfast/lunch/diner. It will pull a random meal idea from an API and present it to the user. If the user likes what they see they have the ability to record need items in the notes page and find the nearest grocery store to their location in the maps section. All done in a responsive format.
+This is my food ideas website created to display my use of HTML, CSS, JS & API's to potential employers and clients. It is created with the idea of producing a viable product for users to find an attractive meal for there next breakfast/lunch/diner. It will pull a random meal idea from an API and present it to the user. If the user likes what they see they have the ability to record need items in the notes page and find the nearest grocery store to their location in the maps section. All done in a responsive format.
 
 <img src="assets/wireframes/krumbs_website.png" width="500"> 
 
