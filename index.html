@@ -19,7 +19,7 @@
 	<title>Krumbs</title>
 </head>
 
-<body class="bkgrd3">
+<body class="#">
 
 	<div class="content">
 		<header class="app-header">
@@ -63,6 +63,13 @@
 
 		</ul>
 	</footer>
+    <!--Onclick to open without clicking-->
+    <!--https://www.sitepoint.com/community/t/onclick-to-open-without-clicking/291154-->
+    <script>        
+            const button = document.querySelector('#get_recipie');
+            button.addEventListener('click', () => { ddoptinbox.openclose('open') });
+            button.click();
+    </script>
 
 </body>
 
