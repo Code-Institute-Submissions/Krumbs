@@ -18,7 +18,7 @@ function writeToDocument(type) {
         document.getElementById("recipe-category").innerHTML = data.meals["0"].strCategory;
         //Running image of random Meal
         document.getElementById("recipe-image").innerHTML = `<img src=${data.meals["0"].strMealThumb}>`;
-        
+
         // from stackoverflow: 
         document.getElementById("recipe-ingred").innerHTML = ""; // clear the list each time
         let results = Object.keys(data.meals["0"])
@@ -35,23 +35,29 @@ function writeToDocument(type) {
         });
 
         // description of how to carry out the meal
-        document.getElementById("recipe-instruction").innerHTML = data.meals["0"].strInstructions.replace(/\n/g,"<br/>");
+        document.getElementById("recipe-instruction").innerHTML = data.meals["0"].strInstructions.replace(/\n/g, "<br/>");
 
         //youtube clip embeded of how to make meal
+
+        //old code
+        //let watchURL = `${data.meals["0"].strYoutube}`;
+        //console.log(data.meals["0"].strYoutube)
+        //let newURL = watchURL.toString().replace("v=", "");
+        //var res = newURL.replace("watch?", "embed/");                
+        //document.getElementById("recipe-vid").innerHTML = `<iframe src=${res}>`;  
+
+
+        //some links getting no video returned
         let watchURL = `${data.meals["0"].strYoutube}`;
-        let newURL = watchURL.toString().replace("v=", "");
-        var res = newURL.replace("watch?", "embed/");
-                
-        document.getElementById("recipe-vid").innerHTML = `<iframe src=${res}>`;  
-        
-        // some of the videos are broken need a 404 message to appear
-        //        if (recipe-vid.location.href === "res") {
-        //        document.getElementById("recipe-vid").innerHTML = `<iframe src=${res}>`;
-        //       } else {
-        //        document.getElementById("recipe-vid").innerHTML = `<img src="assets/img/404-nothing-burger.jpg" alt="404">`;
-        //        }
-            
+        if (!watchURL) {
+            document.getElementById("recipe-vid").innerHTML = `<img src="assets/img/404-nothing-burger.jpg" alt="404">`;
+        }
+        else {
+            let newURL = watchURL.toString().replace("v=", "");
+            var res = newURL.replace("watch?", "embed/");
+            document.getElementById("recipe-vid").innerHTML = `<iframe src=${res}>`;
+        }
+
     });
-    
-   
+
 }
