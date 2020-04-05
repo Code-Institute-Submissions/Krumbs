@@ -38,16 +38,7 @@ function writeToDocument(type) {
         document.getElementById("recipe-instruction").innerHTML = data.meals["0"].strInstructions.replace(/\n/g, "<br/>");
 
         //youtube clip embeded of how to make meal
-
-        //old code
-        //let watchURL = `${data.meals["0"].strYoutube}`;
-        //console.log(data.meals["0"].strYoutube)
-        //let newURL = watchURL.toString().replace("v=", "");
-        //var res = newURL.replace("watch?", "embed/");                
-        //document.getElementById("recipe-vid").innerHTML = `<iframe src=${res}>`;  
-
-
-        //some links getting no video returned
+        //some links getting no video returned so created a 404 message
         let watchURL = `${data.meals["0"].strYoutube}`;
         if (!watchURL) {
             document.getElementById("recipe-vid").innerHTML = `<img src="assets/img/404-nothing-burger.jpg" alt="404">`;
@@ -57,7 +48,7 @@ function writeToDocument(type) {
             var res = newURL.replace("watch?", "embed/");
             document.getElementById("recipe-vid").innerHTML = `<iframe src=${res}>`;
         }
-
+            console.log(data.meals["0"].strYoutube)
     });
 
 }
