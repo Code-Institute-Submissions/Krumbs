@@ -20,11 +20,7 @@ body{
     background-position: center;
 }
 .bkgrd3 {
-    background: url(../img/lemonlove2.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;
+    background: linear-gradient(to left, rgb(236, 240, 190) 0%, rgb(241, 239, 92) 100%);  
 }
 .bkgrd2 { 
     background-color: rgba(156, 240, 139, 0.6);
