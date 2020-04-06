@@ -12,9 +12,7 @@
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="assets/js/search.js"></script>
-
+	
 
 	<title>Krumbs</title>
 </head>
@@ -31,7 +29,7 @@
 
 		<div class="btn-box">
 			<button onclick="writeToDocument('')" class="btn-meal" id="get_recipie"><i class="fas fa-utensils"></i></button>
-			<!--<button onclick="writeToDocument('')" class="btn-meal" id="get_recipie">Random Meal Generator</button>-->
+			
 			<h3>Click Utensils to get a great Meal idea!</h3>
 		</div>
 
@@ -64,12 +62,15 @@
 		</ul>
 	</footer>
     
-    <!--Onclick to open without clicking-->
-    <script>        
-            const button = document.querySelector('#get_recipie');
-            button.addEventListener('click', () => { ddoptinbox.openclose('open') });
-            button.click();
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="assets/js/search.js"></script>
+    <script>
+        (function(){
+            writeToDocument('')
+        })()
     </script>
+
 
 </body>
 
