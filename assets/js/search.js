@@ -48,7 +48,7 @@ function writeToDocument(type) {
             var res = newURL.replace("watch?", "embed/");
             document.getElementById("recipe-vid").innerHTML = `<iframe src=${res}>`;
         }
-            console.log(data.meals["0"].strYoutube)
+        //console.log(data.meals["0"].strYoutube)
     });
 
 }

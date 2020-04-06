@@ -46,7 +46,7 @@ body{
     width: 100%;
     margin: 0 auto;
     padding: 0px;
-    overflow: none;        
+    overflow: hidden;        
 }
 
 header, h1 {
@@ -71,8 +71,7 @@ header, h1, a{
         background-color: rgb(169, 236, 169);
         box-shadow: 3px 3px 10px #888;
         text-align: center;
-        justify-content: center;
-        padding: ;
+        justify-content: center;       
     }
 .btn-box {
     justify-content: center;
@@ -226,8 +225,6 @@ header, h1, a{
     left: 5%;
     }
 }
-
-
 .pac-card {
         margin: 10px 10px 0 0;
         border-radius: 2px 0 0 2px;
