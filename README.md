@@ -71,8 +71,8 @@ For this project I checked to ensure the website would work with 3 popular web b
  3. Tried repated meals and secondary ingredients lists by adding new meals and ingredients to each removing them individually and clearing them from the web page. By exiting the webpage and returning to notes pad to make sure they where still there when added and making sure they where deleted when returning after deletion.
  4. Visiting the maps page and searching for grocery stores in the search bar. Google markers popped up in the location with grocerys stores in the area.
  
- - Interesting bugs or problems you discovered during your testing.
-  - Sometimes the TheMealDB api returns no video instruction for the meal.
+Interesting bugs or problems you discovered during your testing.
+  - Sometimes the TheMealDB api returns no video instruction for the meal. In this case i have place a 404 image indicating a link not working.
 
 
 During the testing of the website i also used the following Tools:
