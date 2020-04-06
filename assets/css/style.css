@@ -13,19 +13,29 @@ body{
     flex-direction: column;       
 }
 .bkgrd1 {
-    background: url(../img/lemonlove.png);
+    background: url(../img/lemonlove.png);    
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-.bkgrd3 {
-    background: linear-gradient(to left, rgb(236, 240, 190) 0%, rgb(241, 239, 92) 100%);  
-}
+
 .bkgrd2 { 
-    background-color: rgba(156, 240, 139, 0.6);
+    background-color: rgba(85, 221, 115, 0.6);
     max-width: 600px;
     border-radius: 20px;       
+}
+
+.bkgrd3 {
+    background: linear-gradient(to left, rgb(255, 255, 255) 0%, rgb(218, 218, 168) 100%);  
+}
+
+.bkgrd4 {
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(233, 233, 109) 100%); 
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 .content {
     flex: 1 0 auto;
@@ -41,15 +51,16 @@ body{
 
 header, h1 {
         font-family: 'Nanum Pen Script', cursive;  
-        color: rgb(253, 246, 232);    
-        font-size: 180%;      
+        color: rgb(201, 198, 198);    
+        font-size: 200%;      
     }  
 header, h1, a{
     text-decoration: none;
-    color: rgb(128, 128, 128);  
+    color: rgb(180, 179, 179);  
+    
 }
 .app-header {        
-        background-color: rgb(169, 236, 169);
+        background-color: rgb(59, 177, 59);
         border-radius: 15px;
         box-shadow: 3px 3px 10px #888;
         text-align: center;
@@ -74,7 +85,7 @@ header, h1, a{
     text-align: center;
     padding-top: 35px;
     padding-bottom: 25px;
-    font-family: 'Nanum Pen Script', cursive;  
+    font-family: 'Roboto', sans-serif;  
     font-size: 140%;
     color: rgb(128, 128, 128);  
 }
@@ -97,15 +108,16 @@ header, h1, a{
     text-align: center;
     justify-content: center;
     padding: 15px 10px;
-    font-size: 140%;
+    font-size: 180%;
 }
 .grid, .grid2 {
     display: grid;
     grid-template-columns: 1fr; /* adding another 1fr for media queries */
     grid-gap: 10px;
-    font-family: 'Nanum Pen Script', cursive; 
+    font-family: 'Roboto', sans-serif;  
     font-weight: bold;
-    font-size: 120%;    
+    font-size: 120%;
+      
 }
 #recipe-instruction{
     background-color: rgba(0, 0, 0, 0.1);
@@ -114,18 +126,18 @@ header, h1, a{
 }
 
 #recipe-vid iframe{
-    min-height: 400px;
+    min-height: 400px;    
 }
 
 #recipe-image img {
     max-height: 500px;
-    max-width: 650px;
-    
+    max-width: 650px;    
 }
 
 #recipe-image{
     align-items: center;
 }
+
 
 
 /*-----------------------------------------media for all grids----------------*/
@@ -155,13 +167,17 @@ header, h1, a{
     padding-left: 5px;
     padding-right: 5px;
     box-shadow: 2px 2px 4px #888;
-    border-radius: 10px;    
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;       
 }
 .grid .item img{
-    width: 100%;
-    border-radius: 10px;
+    top: 50%;
+    width: 100%;  
 }
-.grid ul li{   
+
+
+.grid ul li{ 
     padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 10px;      
@@ -174,6 +190,7 @@ header, h1, a{
     padding-bottom: 5px;      
     /*align-items: center;*/
     list-style: none;
+
 }
 
 
@@ -367,9 +384,8 @@ header, h1, a{
 }
 /*-----------footer-----------*/
 .app-footer {
-    background-color: rgb(130, 255, 130);
-    border-radius: 15px;    
-    color: rgb(128, 128, 128);  
+    background-color: rgb(59, 177, 59);      
+    color: rgb(201, 198, 198);;  
     padding: 10px;    
     margin-top: 10px;
     flex-shrink: 0;
@@ -390,7 +406,7 @@ header, h1, a{
 }
 .app-footer ul li i {
     font-size: 130%;
-    color: rgb(128, 128, 128); 
+    color: rgb(201, 198, 198); 
 }
 
 /*------------footer for map----------*/
