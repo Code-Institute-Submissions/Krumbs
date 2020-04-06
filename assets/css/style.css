@@ -50,6 +50,7 @@ header, h1, a{
 }
 .app-header {        
         background-color: rgb(169, 236, 169);
+        border-radius: 15px;
         box-shadow: 3px 3px 10px #888;
         text-align: center;
         justify-content: center;
@@ -153,10 +154,12 @@ header, h1, a{
     flex-direction: column;
     padding-left: 5px;
     padding-right: 5px;
-    box-shadow: 2px 2px 4px #888;    
+    box-shadow: 2px 2px 4px #888;
+    border-radius: 10px;    
 }
 .grid .item img{
     width: 100%;
+    border-radius: 10px;
 }
 .grid ul li{   
     padding-left: 30px;
@@ -364,7 +367,8 @@ header, h1, a{
 }
 /*-----------footer-----------*/
 .app-footer {
-    background-color: rgb(130, 255, 130);    
+    background-color: rgb(130, 255, 130);
+    border-radius: 15px;    
     color: rgb(128, 128, 128);  
     padding: 10px;    
     margin-top: 10px;
